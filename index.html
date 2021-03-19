@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+    <script>
+        window.onload = function(){
+            // 二维码
+            var Owz = document.getElementById("wz");
+            var Otp = document.getElementById("tp");
+            var Op = Owz.getElementsByTagName("p");
+            var Oimg = Otp.getElementsByTagName("img");
+            for(var i = 0;i<Op.length;i++){
+                Op[i].index = i;
+                Op[1].style.backgroundColor = "#96c6e0";
+                Oimg[0].style.display = "none";
+                Oimg[1].style.display = "block";
+                Op[i].onmousemove = function(){
+                   for(var j = 0;j<Oimg.length;j++){
+                    Op[j].style.backgroundColor = "#fff";
+                    Oimg[j].style.display = "none";
+                   }
+                   Op[this.index].style.backgroundColor = "#96c6e0";
+                   Oimg[this.index].style.display = "block";
+                   
+                }
+            }
+
+            // 导航
+            var aSz = document.getElementById("sz");
+            var nav_right = document.getElementById("nav_right");
+            var nav1 = document.getElementById("nav1");
+            var md = document.getElementById("md");
+            var isShow = false;
+            aSz.onclick = function(){
+                if(!isShow){
+                    nav_right.style.display = "block";
+                    this.className = "sz_1";
+                    md.style.display = "block";
+                    nav1.style.backgroundColor = "#fff";
+                    isShow = true;
+                }else {
+                    nav_right.style.display = "none";
+                    this.className = "sz";
+                    nav1.style.backgroundColor = "";
+                    md.style.display = "none";
+                    isShow = false;
+                }
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="conten">
+            <!-- 头部 -->
+            <header class="header">
+                <div class="w">
+                    <div class="mb" id="md"></div>
+                    <div class="nav">
+                        <div class="nav_1 clearfix" id="nav1">
+                            <div class="nav_left">
+                                <a href="#">
+                                    <img src="./image/logo.png" alt="">
+                                </a>
+                            </div>
+                        <div class="dh">
+                            <div class="sz" id="sz"></div>
+                            <div class="nav_right_01" id="nav_right"> 
+                                    <a href="#">首页</a>
+                                    <a href="#xz">产品下载</a>
+                                    <a href="#rmcx">热门促销</a>
+                                    <a href="#dyr">代言人招募</a>
+                                    <a href="#zx">招商公告</a>
+                            </div>
+                        </div>
+                        <div class="nav_right">    
+                                <a href="#">首页</a>
+                                <a href="#xz">产品下载</a>
+                                <a href="#rmcx">热门促销</a>
+                                <a href="#dyr">代言人招募</a>
+                                <a href="#zx">招商公告</a>
+                        </div>
+                        </div> 
+                        <div class="iridescent">
+                            <h1>彩云优品</h1>
+                            <p>为您精选地道云南特产</p>
+                        </div>   
+                        <div class="nav1_bottom">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/01.png" alt="">
+                                        <span>中国移动<br/> 产地严选</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/02.png" alt="">
+                                        <span>品类丰富<br> 甄选好物</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/03.png" alt="">
+                                        <span>千万用户<br> 爱心扶贫</span> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/04.png" alt="">
+                                        <span>会员活动<br> 优惠领券</span> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>     
+                    </div>                    
+                </div>
+                
+            </header>
+            <!-- 打开彩玉优品 -->
+            <div class="centre" id="xz">
+                <div class="top">
+                    <!-- <img src="./image/02-顶.jpg" alt=""> -->
+                </div> 
+                <div class="w">
+                    <div class="open">
+                        <div class="head">
+                            <h3>打开彩云优品</h3>
+                            <p>感受彩云大地的馈赠</p>
+                        </div>
+                        <div class="middle">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/Phone04.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/Phone03.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/Phone01.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/Phone02.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/Phone05.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="middle_02">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/Phone03.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/Phone01.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/Phone02.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/code01.png" alt="">
+                                        
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/code02.png" alt="">
+                                        
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/code03.png" alt="">
+                                        
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/code04.png" alt="">
+                                       
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom_1">
+                            <div class="wz" id="wz">
+                                <p>彩云优品APP</p>
+                                <p>彩云优品公众号</p>
+                                <p>云南移动和生活优品</p>
+                                <p>彩云优品小程序</p>
+                            </div>
+                            <div class="tp" id="tp">
+                                <img src="./image/code01.jpg" alt="">
+                                <img src="./image/code02.jpg" alt="">
+                                <img src="./image/code03.jpg" alt="">
+                                <img src="./image/code04.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="footer">
+                    <!-- <img src="./image/02-底.jpg" alt=""> -->
+                </div>
+            </div>
+            <!-- 轮播图 -->
+            <div class="promotion" id="rmcx">
+                    <div class="w">
+                        <div class="hot">
+                            <h3>热门促销</h3>
+                            <p>彩云优品不定期推出优惠领券、9.9元包邮、大转盘抽奖、<br>
+                                满减满赠，会员专享等多种促销活动。</p>
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper-container lunbo">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/banner02.png" alt="">
+                                <span>云南人的小锅米线秒杀价9.9元包邮</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/banner01.png" alt="">
+                                <span>红包大转盘爆款来袭</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/banner02.png" alt="">
+                                <span>云南人的小锅米线秒杀价9.9元包邮</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/banner01.png" alt="">
+                                <span>红包大转盘爆款来袭</span>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+            </div>
+            <!-- 代言人专区 -->
+            <div class="spokesperson" id="dyr">
+                <div class="w">
+                    <div class="hot">
+                        <h3>招募彩云优品代言人</h3>
+                        <p>关注彩云优品微信公众号，申请成为彩云优品代言人，<br>
+                           随手分享好货，轻松赚取佣金。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 招商 -->
+            <div class="investment" id="zx">
+                    <div class="w">
+                        <p>招商公告</p>
+                    </div>
+            </div>
+            <!-- 底部合作 -->
+            <div class="cooperation">
+                <div class="w">
+                    <div class="footer_01">
+                        <h1>品牌合作</h1>
+                        <div class="logo">
+                            <ul>
+                                <li>
+                                   <a href="#">
+                                       <img src="./image/pp1.jpg" alt="">
+                                   </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/pp2.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/pp3.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/pp4.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/pp5.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo_02">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/pp2.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/pp3.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./image/pp4.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_02">
+                            <p>版权所有 ©️ 2003-2017 中国移动云南分公司 彩云优品  滇ICP备14057743号   滇公网安备1101050</p>
+                            <p>版权所有 ©️ 2003-2017 中国移动云南分公司 彩云优品<br> 滇ICP备14057743号滇公网安备11010502034855号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<script src="./js/swiper-3.3.1.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      loop : true,
+      autoplay : 2000,
+      slidesPerView: 2,
+      autoplayDisableOnInteraction: false,
+      prevButton: '.swiper-button-prev',
+      nextButton: '.swiper-button-next',
+      breakpoints: { 
+            //当宽度小于等于1200
+            1200: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            //当宽度小于等于1900
+            1900: { 
+              slidesPerView: 2,
+              spaceBetween: 20
+            }
+      }
+    });
+  </script>
+</body>
+</html>
